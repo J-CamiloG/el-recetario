@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Search from '../components/Search.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Welcome to Astro."
+		description='Explora el mundo de las recetas'>
+	<main>
+		<!-- section for Home -->
+		<section class="inicio">
+			<img src="https://images.unsplash.com/photo-1549590143-d5855148a9d5?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+			<h3>
+				"<span>Descubre</span> span el sabor de la inspiración en cada receta, 
+				un rincón donde los sabores se encuentran y <span>las experiencias culinarias se crean.</span> "
+			</h3>
+		</section>
+		<!-- section for  -->
+		<Search />
+	</main>
+	<footer>
+		<!-- section for footer -->
+		<!--<Footer> -->
+	</footer>
+</Layout>
+
+<style>
+	.inicio{
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem 0 0 1rem;
+
+		& img{
+			width:500px;
+			border-radius: 15px;
+		}
+
+		& h3{
+			color: rgb(182, 182, 182);
+			font-size: 1.2rem;
+			max-width: 35rem;
+
+			& span{
+				color: rgb(165, 171, 223);
+				font-size: 1.3rem;
+			}
+		}
+	}
+</style>
